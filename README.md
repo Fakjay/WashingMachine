@@ -44,6 +44,37 @@ The app is built with SwiftUI for iOS and uses Firebase for backend services:
    - Automatic winner determination
    - Player stats tracking
 
+## Testing
+
+The application includes a comprehensive test suite to ensure code quality and functionality:
+
+### Test Categories
+
+1. **Model Tests**
+   - `UserTests`: Validates user model properties and computed values
+   - `MatchTests`: Tests match creation and state management
+   - `MatchSetTests`: Verifies the scoring functionality
+
+2. **Service Tests**
+   - `AuthServiceTests`: Tests authentication workflows
+   - `MatchServiceTests`: Validates match creation and updates
+   - `NotificationServiceTests`: Ensures notifications are properly handled
+
+### Running Tests
+
+1. Open the project in Xcode
+2. Select the WashingMachine scheme
+3. Press ⌘U or navigate to Product > Test
+4. View test results in the Test Navigator
+
+### Test Coverage
+
+The tests cover:
+- Model initialization and property validation
+- Computed property calculations
+- Service operation success and failure scenarios
+- Firebase integration points (with mocking)
+
 ## Getting Started
 
 ### Prerequisites
